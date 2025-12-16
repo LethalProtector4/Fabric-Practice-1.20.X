@@ -17,14 +17,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.RUBY);
-                        entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.METAL_DETECTOR);
+
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
-                        entries.add(ModBlocks.RUBY_ORE);
-                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModItems.RUBY);
+                        entries.add(ModItems.RAW_RUBY);
 
                     }).build());
 
