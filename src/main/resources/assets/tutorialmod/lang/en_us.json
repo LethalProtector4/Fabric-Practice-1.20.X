@@ -9,6 +9,7 @@
   "block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
 
   "block.tutorialmod.sound_block": "Sound Block",
 
