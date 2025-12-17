@@ -1,21 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "R": {
-      "item": "tutorialmod:ruby"
-    },
-    "S": {
-      "item": "minecraft:stone"
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:raw_ruby_block"
     }
-  },
-  "pattern": [
-    "SSS",
-    "SRS",
-    "SSS"
   ],
   "result": {
+    "count": 9,
     "item": "tutorialmod:raw_ruby"
-  },
-  "show_notification": true
+  }
 }
