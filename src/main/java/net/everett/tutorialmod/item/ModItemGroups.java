@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.RUBY_STAFF);
 
                         entries.add(ModItems.TOMATO);
 
