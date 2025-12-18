@@ -13,6 +13,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:ruby_fence"
@@ -23,6 +35,7 @@
   "requirements": [
     [
       "has_ruby",
+      "has_stick",
       "has_the_recipe"
     ]
   ],

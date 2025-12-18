@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_fence_gate"
+        "recipe": "minecraft:ruby_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_fence_gate"
+      "minecraft:ruby_axe"
     ]
   },
   "sends_telemetry_event": false
