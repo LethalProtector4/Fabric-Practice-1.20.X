@@ -1,5 +1,6 @@
 package net.everett.tutorialmod.block;
 
+import net.everett.tutorialmod.block.custom.CornCropBlock;
 import net.everett.tutorialmod.block.custom.SoundBlock;
 import net.everett.tutorialmod.block.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -52,6 +53,8 @@ public class ModBlocks {
 
     public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "tomato_crop"),
             new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "corn_crop"),
+            new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
 
     private static Block registerBlock(String name, Block block) {

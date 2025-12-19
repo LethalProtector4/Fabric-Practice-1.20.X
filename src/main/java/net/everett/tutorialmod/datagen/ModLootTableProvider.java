@@ -1,6 +1,7 @@
 package net.everett.tutorialmod.datagen;
 
 import net.everett.tutorialmod.block.ModBlocks;
+import net.everett.tutorialmod.block.custom.CornCropBlock;
 import net.everett.tutorialmod.block.custom.TomatoCropBlock;
 import net.everett.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -44,9 +45,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RAW_RUBY));
 
-        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
+        BlockStatePropertyLootCondition.Builder tomato_builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(TomatoCropBlock.AGE, 5));
-        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, builder));
+        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, tomato_builder));
+
+        BlockStatePropertyLootCondition.Builder corn_builder = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(CornCropBlock.AGE, 8));
+
+        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, corn_builder));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
