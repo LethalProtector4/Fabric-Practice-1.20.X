@@ -53,6 +53,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .exactMatch(CornCropBlock.AGE, 8));
 
         addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, corn_builder));
+
+        addDrop(ModBlocks.DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

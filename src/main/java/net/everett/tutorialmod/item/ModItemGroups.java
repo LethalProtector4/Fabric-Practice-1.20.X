@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.CORN_SEEDS);
 
+                        entries.add(ModBlocks.DAHLIA);
+
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
 

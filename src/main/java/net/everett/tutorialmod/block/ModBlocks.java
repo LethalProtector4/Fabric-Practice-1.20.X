@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.everett.tutorialmod.TutorialMod;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -55,6 +56,11 @@ public class ModBlocks {
             new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "corn_crop"),
             new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block DAHLIA = registerBlock("dahlia",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 10, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "potted_dahlia"),
+            new FlowerPotBlock(DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
