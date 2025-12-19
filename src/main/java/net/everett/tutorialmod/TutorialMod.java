@@ -5,6 +5,7 @@ import net.everett.tutorialmod.item.ModItemGroups;
 import net.everett.tutorialmod.item.ModItems;
 import net.everett.tutorialmod.util.ModCustomTrades;
 import net.everett.tutorialmod.util.ModLootTableModifiers;
+import net.everett.tutorialmod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -24,6 +25,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModLootTableModifiers.modifyLootTables();
 
+		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);

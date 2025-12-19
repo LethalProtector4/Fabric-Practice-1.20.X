@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-19T01:47:26.3452925	Tutorial Mod/Model Definitions
+// 1.20.1	2025-12-19T14:54:09.8658167	Tutorial Mod/Model Definitions
 2a8d008a809f38e68eccea32c23096824f276b87 assets\tutorialmod\models\item\ruby_leggings_quartz_trim.json
 3099a76a0bbb2a689862d322c8ea1973b2d837c0 assets\tutorialmod\models\item\ruby_pressure_plate.json
 430890fbcf2db7c6b7b703b18ca062d9b174ed64 assets\tutorialmod\models\item\coal_briquette.json
@@ -15,8 +15,8 @@ a2d5983cad7a3013cfed63e65fba36ce76160c3e assets\tutorialmod\models\block\ruby_bu
 ab328a99e65fed08119dbb5356cd6c7edf239107 assets\tutorialmod\models\item\ruby_helmet_netherite_trim.json
 532ba68dc6954d736bc5f867e2e8bd22810cedd9 assets\tutorialmod\models\item\ruby_boots_redstone_trim.json
 d2ea57718b2b1d4bafd79cc6c71c483bab5528d7 assets\tutorialmod\blockstates\ruby_block.json
-9153bba5c81235e9d62cd58ae1fb8a7084beb589 assets\tutorialmod\models\block\ruby_slab.json
 4c44e18e068a091e7c49c847cc81e49d6d5ff2f4 assets\tutorialmod\models\block\ruby_fence_post.json
+9153bba5c81235e9d62cd58ae1fb8a7084beb589 assets\tutorialmod\models\block\ruby_slab.json
 052ea90c57cb2bf382cf7d3f9bc57b20ee4ea416 assets\tutorialmod\models\item\ruby_button.json
 f8363c61ac5c853aefbed155e9fe21d00ab5b177 assets\tutorialmod\models\item\ruby_ore.json
 974c24639cc3704db5aa877fbbc45b6010001267 assets\tutorialmod\models\block\ruby_door_top_left.json
@@ -89,8 +89,8 @@ b521bdfb42c4bd5cf9f0838ba2047b64f0d4c19c assets\tutorialmod\models\block\corn_cr
 a549f90e4db430408e477092ac95e50c97648ec3 assets\tutorialmod\models\block\ruby_trapdoor_top.json
 a8b0e15237f19e81c6da63b29b4f094fb26c8dc3 assets\tutorialmod\blockstates\ruby_button.json
 4f62156aad90a7d3e1ba601f1a027655c90ddfbd assets\tutorialmod\models\item\ruby_boots_gold_trim.json
-05f4e35e2dae88c1fb1c452d4c47ed12931e0ee8 assets\tutorialmod\models\block\ruby_pressure_plate.json
 a5acbc9e4857bd3146a5ff00c184acb77ba00082 assets\tutorialmod\models\item\dahlia.json
+05f4e35e2dae88c1fb1c452d4c47ed12931e0ee8 assets\tutorialmod\models\block\ruby_pressure_plate.json
 41a3337f62f18738eb3f6183d868792e853b94b1 assets\tutorialmod\models\block\corn_crop_stage1.json
 8a4ea8978f18d5b07ab7d2093effbf9801c35e91 assets\tutorialmod\models\item\ruby_helmet_emerald_trim.json
 bdac27efd46b299101b2f7bf1341e1de1c83b3f2 assets\tutorialmod\models\block\ruby_wall_side_tall.json

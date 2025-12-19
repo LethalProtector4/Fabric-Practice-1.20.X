@@ -1,7 +1,10 @@
 package net.everett.tutorialmod.util;
 
+import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.item.ModItems;
+import net.everett.tutorialmod.villager.ModVillagers;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.EnchantedBookItem;
@@ -55,6 +58,49 @@ public class ModCustomTrades {
                             new ItemStack(ModItems.RAW_RUBY, 1),
                             new ItemStack(ModItems.COAL_BRIQUETTE, 3),
                             1, 12, 0.05f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 16),
+                            new ItemStack(Blocks.JUKEBOX, 1),
+                            1, 10, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.RUBY, 16),
+                            new ItemStack(Blocks.NOTE_BLOCK, 2),
+                            5, 5, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.RUBY, 32),
+                            new ItemStack(Items.EMERALD, 12),
+                            new ItemStack(ModBlocks.SOUND_BLOCK, 1),
+                            5, 5, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.REDSTONE, 32),
+                            new ItemStack(Items.EMERALD, 3),
+                            5, 5, 0.05f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 2,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 16),
+                            new ItemStack(Blocks.JUKEBOX, 2),
+                            1, 10, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.RUBY, 16),
+                            new ItemStack(Blocks.NOTE_BLOCK, 2),
+                            5, 5, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.RUBY, 32),
+                            new ItemStack(Items.EMERALD, 12),
+                            new ItemStack(ModBlocks.SOUND_BLOCK, 2),
+                            5, 5, 0.05f));
                 });
     }
 }
