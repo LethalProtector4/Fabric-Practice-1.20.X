@@ -3,6 +3,7 @@ package net.everett.tutorialmod;
 import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.item.ModItemGroups;
 import net.everett.tutorialmod.item.ModItems;
+import net.everett.tutorialmod.sound.ModSounds;
 import net.everett.tutorialmod.util.ModCustomTrades;
 import net.everett.tutorialmod.util.ModLootTableModifiers;
 import net.everett.tutorialmod.villager.ModVillagers;
@@ -27,6 +28,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
+
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
