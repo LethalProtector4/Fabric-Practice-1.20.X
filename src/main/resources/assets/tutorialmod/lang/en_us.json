@@ -33,6 +33,9 @@
   "item.tutorialmod.ruby_boots": "Ruby Boots",
 
   "block.tutorialmod.sound_block": "Sound Block",
+  "entity.minecraft.villager.sound_master": "Soundmaster",
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "item.tutorialmod.tomato": "Tomato",
   "item.tutorialmod.tomato_seeds": "Tomato Seeds",
@@ -42,8 +45,6 @@
   "block.tutorialmod.dahlia": "Dahlia",
 
   "item.tutorialmod.coal_briquette": "Coal Briquette",
-
-  "entity.minecraft.villager.sound_master": "Soundmaster",
 
   "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
 

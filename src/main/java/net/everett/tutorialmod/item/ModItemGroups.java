@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.RUBY_STAFF);

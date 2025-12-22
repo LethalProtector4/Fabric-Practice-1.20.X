@@ -3,6 +3,7 @@ package net.everett.tutorialmod.item;
 import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.item.custom.MetalDetectorItem;
 import net.everett.tutorialmod.item.custom.ModArmorItem;
+import net.everett.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -35,6 +36,7 @@ public class ModItems {
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
             new HoeItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
 
+    // ARMOR
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
             new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
@@ -57,6 +59,10 @@ public class ModItems {
 
     // FUEL
     public static final Item COAL_BRIQUETTE = registerItem("coal_briquette", new Item(new FabricItemSettings()));
+
+    // MUSIC
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
