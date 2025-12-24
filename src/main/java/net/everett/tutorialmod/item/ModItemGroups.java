@@ -62,6 +62,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
 
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+                        entries.add(ModItems.SNAIL_SPAWN_EGG);
 
                     }).build());
 

@@ -2,9 +2,7 @@ package net.everett.tutorialmod;
 
 import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.entity.ModEntities;
-import net.everett.tutorialmod.entity.client.ModModelLayers;
-import net.everett.tutorialmod.entity.client.PorcupineModel;
-import net.everett.tutorialmod.entity.client.PorcupineRenderer;
+import net.everett.tutorialmod.entity.client.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -25,5 +23,8 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.SNAIL, SnailRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SNAIL, SnailModel::getTexturedModelData);
     }
 }
