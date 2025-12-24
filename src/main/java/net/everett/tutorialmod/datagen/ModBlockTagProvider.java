@@ -20,46 +20,29 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS)
-                .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
-                .forceAddTag(BlockTags.COAL_ORES)
-                .forceAddTag(BlockTags.IRON_ORES)
-                .forceAddTag(BlockTags.GOLD_ORES)
-                .forceAddTag(BlockTags.DIAMOND_ORES)
-                .forceAddTag(BlockTags.EMERALD_ORES)
-                .forceAddTag(BlockTags.LAPIS_ORES)
-                .forceAddTag(BlockTags.REDSTONE_ORES)
-                .forceAddTag(BlockTags.COPPER_ORES);
+//        getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS)
+//                .add(ModBlocks.RUBY_ORE)
+//                .forceAddTag(BlockTags.DIAMOND_ORES);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
-                .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RAW_RUBY_BLOCK)
-                .add(ModBlocks.SOUND_BLOCK);
+//                .add(ModBlocks.RUBY_ORE)
+                ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
-                //.add(ModBlocks.SOUND_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
-                .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RAW_RUBY_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
-                .add(ModBlocks.SOUND_BLOCK);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")));
 
-        getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.RUBY_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.RUBY_FENCE_GATE);
-        getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.RUBY_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCES);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES);
+
+        getOrCreateTagBuilder(BlockTags.WALLS);
+
     }
 }

@@ -1,8 +1,6 @@
 package net.everett.tutorialmod.datagen;
 
 import net.everett.tutorialmod.block.ModBlocks;
-import net.everett.tutorialmod.block.custom.CornCropBlock;
-import net.everett.tutorialmod.block.custom.TomatoCropBlock;
 import net.everett.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -69,8 +67,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
-                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
-        itemModelGenerator.register(ModItems.SNAIL_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

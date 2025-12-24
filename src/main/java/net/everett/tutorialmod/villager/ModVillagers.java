@@ -17,17 +17,17 @@ import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
-    public static final RegistryKey<PointOfInterestType> SOUND_POI_KEY = poiKey("soundpoi");
-    public static final PointOfInterestType SOUND_POI = registerPoi("soundpoi", ModBlocks.SOUND_BLOCK);
+//    public static final RegistryKey<PointOfInterestType> SOUND_POI_KEY = poiKey("soundpoi");
+//    public static final PointOfInterestType SOUND_POI = registerPoi("soundpoi", ModBlocks.SOUND_BLOCK);
+//
+//    public static final VillagerProfession SOUND_MASTER = registerProfession("sound_master", SOUND_POI_KEY);
 
-    public static final VillagerProfession SOUND_MASTER = registerProfession("sound_master", SOUND_POI_KEY);
 
-
-    private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
-        return Registry.register(Registries.VILLAGER_PROFESSION, new Identifier(TutorialMod.MOD_ID, name),
-                new VillagerProfession(name, entry -> entry.matchesKey(type), entry -> entry.matchesKey(type),
-                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_SHEPHERD));
-    }
+//    private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
+//        return Registry.register(Registries.VILLAGER_PROFESSION, new Identifier(TutorialMod.MOD_ID, name),
+//                new VillagerProfession(name, entry -> entry.matchesKey(type), entry -> entry.matchesKey(type),
+//                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_SHEPHERD));
+//    }
 
     private static PointOfInterestType registerPoi(String name, Block block) {
         return PointOfInterestHelper.register(new Identifier(TutorialMod.MOD_ID, name), 1, 1, block);

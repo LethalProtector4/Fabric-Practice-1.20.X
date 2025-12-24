@@ -1,8 +1,6 @@
 package net.everett.tutorialmod.datagen;
 
 import net.everett.tutorialmod.block.ModBlocks;
-import net.everett.tutorialmod.block.custom.CornCropBlock;
-import net.everett.tutorialmod.block.custom.TomatoCropBlock;
 import net.everett.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -27,44 +25,36 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.RUBY_BLOCK);
-        addDrop(ModBlocks.RAW_RUBY_BLOCK);
-        addDrop(ModBlocks.SOUND_BLOCK);
+        // BASIC BLOCK
+//        addDrop(ModBlocks.RUBY_BLOCK);
 
-        addDrop(ModBlocks.RUBY_STAIRS);
-        addDrop(ModBlocks.RUBY_TRAPDOOR);
-        addDrop(ModBlocks.RUBY_WALL);
-        addDrop(ModBlocks.RUBY_FENCE);
-        addDrop(ModBlocks.RUBY_FENCE_GATE);
-        addDrop(ModBlocks.RUBY_BUTTON);
-        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
+        // DECORATION
+//        addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
 
-        addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
-        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+        // ORE
+//        addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
 
-        addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
-        addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RAW_RUBY));
+        // CROPS
+//        BlockStatePropertyLootCondition.Builder tomato_builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
+//                .exactMatch(TomatoCropBlock.AGE, 5));
+//        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, tomato_builder));
 
-        BlockStatePropertyLootCondition.Builder tomato_builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
-                .exactMatch(TomatoCropBlock.AGE, 5));
-        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, tomato_builder));
+//        BlockStatePropertyLootCondition.Builder corn_builder = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
+//                .exactMatch(CornCropBlock.AGE, 8));
+//        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, corn_builder));
 
-        BlockStatePropertyLootCondition.Builder corn_builder = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
-                .exactMatch(CornCropBlock.AGE, 8));
-
-        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, corn_builder));
-
-        addDrop(ModBlocks.DAHLIA);
-        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
+        // FLOWERS
+//        addDrop(ModBlocks.DAHLIA);
+//        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
     }
 
-    public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
-        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
-                ((LeafEntry.Builder)
-                        ItemEntry.builder(item)
-                                .apply(SetCountLootFunction
-                                        .builder(UniformLootNumberProvider
-                                                .create(2.0f, 5.0f))))
-                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
-    }
+//    public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
+//        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
+//                ((LeafEntry.Builder)
+//                        ItemEntry.builder(item)
+//                                .apply(SetCountLootFunction
+//                                        .builder(UniformLootNumberProvider
+//                                                .create(2.0f, 5.0f))))
+//                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+//    }
 }

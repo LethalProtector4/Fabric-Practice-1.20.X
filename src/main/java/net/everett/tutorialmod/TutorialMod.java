@@ -3,7 +3,6 @@ package net.everett.tutorialmod;
 import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.entity.ModEntities;
 import net.everett.tutorialmod.entity.custom.PorcupineEntity;
-import net.everett.tutorialmod.entity.custom.SnailEntity;
 import net.everett.tutorialmod.item.ModItemGroups;
 import net.everett.tutorialmod.item.ModItems;
 import net.everett.tutorialmod.sound.ModSounds;
@@ -28,17 +27,16 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		ModLootTableModifiers.modifyLootTables();
-
-		ModVillagers.registerVillagers();
-		ModCustomTrades.registerCustomTrades();
-
-		ModSounds.registerSounds();
+//		ModLootTableModifiers.modifyLootTables();
+//
+//		ModVillagers.registerVillagers();
+//		ModCustomTrades.registerCustomTrades();
+//
+//		ModSounds.registerSounds();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.SNAIL, SnailEntity.createSnailAttributes());
 		ModEntities.registerModEntities();
 
-		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
+//		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
 }

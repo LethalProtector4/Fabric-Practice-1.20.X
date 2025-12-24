@@ -14,93 +14,13 @@ import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 
 public class ModCustomTrades {
-    public static void registerCustomTrades() {
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(ModItems.TOMATO, 7),
-                            6, 5, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(ModItems.TOMATO_SEEDS, 1),
-                            2, 7, 0.075f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.GOLD_INGOT, 16),
-                            new ItemStack(ModItems.CORN_SEEDS, 1),
-                            6, 5, 0.05f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RUBY, 32),
-                            EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PIERCING, 2)),
-                            3, 12, 0.05f));
-                });
-
-        TradeOfferHelper.registerWanderingTraderOffers(1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RAW_RUBY, 16),
-                            new ItemStack(ModItems.METAL_DETECTOR, 1),
-                            1, 12, 0.05f));
-                });
-
-        TradeOfferHelper.registerWanderingTraderOffers(2,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RAW_RUBY, 1),
-                            new ItemStack(ModItems.COAL_BRIQUETTE, 3),
-                            1, 12, 0.05f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 16),
-                            new ItemStack(Blocks.JUKEBOX, 1),
-                            1, 10, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RUBY, 16),
-                            new ItemStack(Blocks.NOTE_BLOCK, 2),
-                            5, 5, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RUBY, 32),
-                            new ItemStack(Items.EMERALD, 12),
-                            new ItemStack(ModBlocks.SOUND_BLOCK, 1),
-                            5, 5, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.REDSTONE, 32),
-                            new ItemStack(Items.EMERALD, 3),
-                            5, 5, 0.05f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 2,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 16),
-                            new ItemStack(Blocks.JUKEBOX, 2),
-                            1, 10, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RUBY, 16),
-                            new ItemStack(Blocks.NOTE_BLOCK, 2),
-                            5, 5, 0.05f));
-
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ModItems.RUBY, 32),
-                            new ItemStack(Items.EMERALD, 12),
-                            new ItemStack(ModBlocks.SOUND_BLOCK, 2),
-                            5, 5, 0.05f));
-                });
-    }
+//    public static void registerCustomTrades() {
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
+//                factories -> {
+//                    factories.add((entity, random) -> new TradeOffer(
+//                            new ItemStack(Items.EMERALD, 2),
+//                            new ItemStack(ModItems.TOMATO, 7),
+//                            6, 5, 0.05f));
+//        });
+//    }
 }
