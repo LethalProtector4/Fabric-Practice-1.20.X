@@ -15,10 +15,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.RUBY_HELMET, ModItems.RUBY_CHESTPLATE, ModItems.RUBY_LEGGINGS, ModItems.RUBY_BOOTS);
-
-        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
-                .add(ModItems.BAR_BRAWL_MUSIC_DISC);
+//        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+//                .add(ModItems.RUBY_HELMET, ModItems.RUBY_CHESTPLATE, ModItems.RUBY_LEGGINGS, ModItems.RUBY_BOOTS);
+//
+//        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+//                .add(ModItems.BAR_BRAWL_MUSIC_DISC);
     }
 }

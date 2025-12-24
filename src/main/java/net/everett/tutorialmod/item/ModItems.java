@@ -2,7 +2,6 @@ package net.everett.tutorialmod.item;
 
 import net.everett.tutorialmod.block.ModBlocks;
 import net.everett.tutorialmod.entity.ModEntities;
-import net.everett.tutorialmod.item.custom.MetalDetectorItem;
 import net.everett.tutorialmod.item.custom.ModArmorItem;
 import net.everett.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

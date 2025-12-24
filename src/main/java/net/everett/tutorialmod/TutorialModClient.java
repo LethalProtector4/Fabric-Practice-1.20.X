@@ -15,7 +15,7 @@ public class TutorialModClient implements ClientModInitializer {
     public void onInitializeClient() {
 //        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUBY_DOOR, RenderLayer.getCutout());
 //
-//        EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
-//        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
     }
 }
