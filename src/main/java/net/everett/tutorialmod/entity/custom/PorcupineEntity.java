@@ -81,14 +81,14 @@ public class PorcupineEntity extends AnimalEntity {
 
         this.goalSelector.add(1, new PorcupineAttackGoal(this, 1D, true));
 
-        this.goalSelector.add(1, new AnimalMateGoal(this, 1.15D));
-        this.goalSelector.add(2, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.BEETROOT), false));
+        this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
+        this.goalSelector.add(3, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.BEETROOT), false));
 
-        this.goalSelector.add(3, new FollowParentGoal(this, 1.15D));
+        this.goalSelector.add(4, new FollowParentGoal(this, 1.15D));
 
-        this.goalSelector.add(4, new WanderAroundFarGoal(this, 1D));
-        this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(6, new LookAroundGoal(this));
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 1D));
+        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
+        this.goalSelector.add(7, new LookAroundGoal(this));
 
         this.targetSelector.add(1, new RevengeGoal(this));
     }

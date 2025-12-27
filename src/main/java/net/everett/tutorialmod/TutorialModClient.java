@@ -17,5 +17,8 @@ public class TutorialModClient implements ClientModInitializer {
 //
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.PRACTICE_CUBE, PracticeCubeRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PRACTICE_CUBE, PracticeCubeModel::getTexturedModelData);
     }
 }
